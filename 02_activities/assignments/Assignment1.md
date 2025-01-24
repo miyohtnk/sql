@@ -205,5 +205,8 @@ Consider, for example, concepts of fariness, inequality, social structures, marg
 
 
 ```
-Answer: 
+Answer: Databases have become ingrained in our every day lives, from credit card purchases, to medical records, job information, browsing history, demographic data and more. More often than not, we do not think about the consequences of sharing our data, and in most cases there are no isses- until there are.
+Personal experiences have made it clear that such databases can uncover value systems that are respected or followed by each country or organization. An example where this was evident was during the National Identification card creation of each person in Greece, which occurs when they turn 18 years old. In order to receive an ID card, you need to disclose your religion. At the time (circa 2012, which I believe was more prominent than now), society was largely constructed around religion, specifically Orthodox Christianity, with culture, language and tradition being rigidly tied to it. THus, you had no choice but to disclose your religious beliefs, and those could not include atheism. Of course, if you are a Christian, there is no issue with this. However, if you are a Muslim or follow a different religion, or are an atheist, this is a problem. The concept of religion is also seen when your birth certificate is recorded, your school grades are uploaded, your marriage certificate etc.
+Apart from the fact that religion is a personal choice and not a matter by which the state can categorize people, forcing individuals to declare their religion (and never lack thereof) can be used by a corrupt government or even a corrupt church system to marginalize the minority (in this case non-Orthodox people).
+
 ```
