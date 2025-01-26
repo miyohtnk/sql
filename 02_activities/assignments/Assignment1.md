@@ -205,5 +205,26 @@ Consider, for example, concepts of fariness, inequality, social structures, marg
 
 
 ```
-Your thoughts...
+Answer: Databases have become ingrained in our every day lives, from credit card purchases, to medical records, job information, browsing history, demographic data and more.
+More often than not, we do not think about the consequences of sharing our data, and in most cases there are no isses- until there are.
+Personal experiences have made it clear that such databases can uncover value systems that are respected or followed by each country or organization.
+Some problems with this, especially with today's AI models is that these databases are full of data that carry a bias that is perpetuated every time the model is updated. Societal ideas like binary gender have historically, and even now in some places, led to people choosing "what is available as an option", which, of course, is wrong, especially when humans are so multifaceted.
+
+An example where this is evident is during the National Identification card issuuing of each person in Greece, which occurs when they turn 18 years old.
+In order to receive an ID card, you need to disclose your religion.
+At the time (circa 2012, which I believe was more prominent than now), the Greek society was largely constructed around religion, specifically Orthodox Christianity, with culture, language and tradition being rigidly tied to it.
+Thus, you had no choice but to disclose your religious beliefs, and those could not include atheism. Of course, if you are a Christian, there is no issue with this.
+However, if you are a Muslim or follow a different religion, or are an atheist, this is a problem.
+The concept of religion is also seen when your birth certificate is recorded, your school grades are uploaded, your marriage certificate etc.
+Apart from the fact that religion is a personal choice and not a matter by which the state can categorize people, forcing individuals to declare their religion (and never lack thereof) can be used by a corrupt government or even a corrupt church system to marginalize the minority (in this case non-Orthodox people).
+
+Another issue seen with ID cards (and passports) is the lack of characters that can be used for names, or the character length.
+For example, in Canada, people with long full names (think Mexican names, Sri Lankan names etc.) are not able to have their full names displayed in Canadian IDs, and accents are not inserted.
+This causes many issues because the information in the different documents do not match.
+The "whiteness" and "non-whiteness" of a name matters, even in multicultural countries like Canada.
+The issue of character constraints is, unsurprisingly, tied to the database structure- if an prompt allowed for more letters, or non-English letters, this could be avoided.
+
+Finally, a case of a bias seen with AI models that can have societal effects is seen with online advertising.
+Research at Carnegie Mellon University in Pittsburg found that due to biases in search engine ad algorithms, Google's online advertising system was displaying high-paying jobs to men more often than to women.
+This of course is a classic perpetuation of the disparity between men and women in today's society, and a clear case if inequality and unfairness.
 ```
