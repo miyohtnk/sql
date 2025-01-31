@@ -54,7 +54,9 @@ The store wants to keep customer addresses. Propose two architectures for the CU
 **HINT:** search type 1 vs type 2 slowly changing dimensions. 
 
 ```
-Your answer...
+Type 1 slowly changing dimension will overwrite the existing value (customer address) with the new address and not retain any history.
+On the other hand, type 2 slowly changing dimension will retain the value and add a new row for the new value. For example if someone lived on Yonge St. and moved to Bay St., we would have a record of both.
+In order to keep customer addresses, Type 2 would need to be used. In this case, we should have a column that records date (start and end date) so that we can distinguish the two rows for the same customer_id. For example in the Yonge St. and Bay St case, if the person moved from Yonge to Bay in December, then in the column end date for Yonge St. we would have December 2024, and in the start date for Bay St. we would have December 2024.
 ```
 
 ***
