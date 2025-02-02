@@ -54,7 +54,10 @@ The store wants to keep customer addresses. Propose two architectures for the CU
 **HINT:** search type 1 vs type 2 slowly changing dimensions. 
 
 ```
-Your answer...
+Type 1 slowly changing dimension will overwrite the existing value (customer address) with the new address and not retain any history.
+On the other hand, type 2 slowly changing dimension will retain the value and add a new row for the new value. For example if someone lived on Yonge St. and moved to Bay St., we would have a record of both.
+In order to keep customer addresses, Type 2 would need to be used. In this case, we should have two columns that records date (start_date and end_date) so that we can distinguish the two rows for the same customer_id. Other columns include customer_id, customer_first_name, customer_last_name, street_name, postal_code, province, country columns. For example, in the Yonge St. and Bay St case, if the person moved from Yonge to Bay in December, then in the column end_date for Yonge St. we would have December 2024, and in the start_date for Bay St. we would have December 2024. The information in columns street_name, postal_code would change, but the information in customer_id, customer_first_name, customer_last_name, province, country would stay the same. Thus, we would have 2 rows for the same customer_id
+In case where we did not keep a history of the customer addresses (type 1), then our previous table would have one row for this customer_id. The columns that would change (such as start_date, end_date, street_name, postal_code) would have the new information in, and the information that was there before would not be there anymore.
 ```
 
 ***
@@ -182,5 +185,28 @@ Consider, for example, concepts of labour, bias, LLM proliferation, moderating c
 
 
 ```
-Your thoughts...
+Answer: In this really interesting article, we see the author, a data scientist working in the US, talk about AI tools and how in the background, a lot of human work has been done to make these tools possible.
+Nowadays we give so much power to machines and their "thought" process, from having them help us write essays, to telling us facts about all sorts of topics, to suggesting recipes and travel itineraries.
+Of course, as the article discusses, all these training datasets come from real people, which is:
+1. Used without consent
+2. Used without filter (for example, from bias)
+Not only do we not know about the work performed "behind the scenes", we also do not care, at least to find out more (this is an average).
+But as pointed out, a lot of the times, the tools that are used in the "developed" world, or perhaps it is more proper to say _privileged_ world, are created with help from the "developing" parts of the world.
+This help comes from people that not only  get exploited, have no benefits, no prospects for a better life, but are deemed "non-hard working" and "possibly criminals" by people that take advantage of them (or take advantage of the system).
+In addition, no recognition is given to them in publications or conferences and meetings, despite this being a common phenomenon when concerning "collaborators", "graduate students", "colleagues" etc.
+The work that is labeled "easy" and "meaningless" is passed off to people who are "lesser", and yet, the professor at Princeton will get the recognition for their "genius".
+We equate work that is repetitive and grueling and "easy" as useless and pointless, and yet, without it, we would not have the tools that we do today.
+The power of the machine transcends the power of humans, even though a machine would not work without the energy that humans provide, the data that humans gather, and the coding it takes for everything to run smoothly.
+And yet, machine is labeled as "superior" to humans.
+
+Another interesting point is that this information that is fed into the algorithm is not monitored.
+Thus, a lot of biases and stereotypes can pass through, to the detriment of the user.
+For example, in a scenario where we have a dataset from the 1960s regarding scientific papers and publishing, and you ask what are the contributions of women in science, you may receive an output along the lines of "women have historically not contributed to science to a major degree, because their strengths lie in taking care of the household. Women are not known to possess the scientific spirit required for academic work."
+Of course, this is just an example and it is quite extreme, but these datasets have historically existed, before they got populated as time went on.
+
+In other cases, the LLMs prohibit certain responses that are directly linked to the history/ethos of the creators.
+For example, a recent LLM called DeepSeek was created by a Chinese group, and importantly, the model does not respond when asked about cases such as the Tiananmen square protests and massacre.
+This censoring of information is unethical, especially to the people that lived through these situations.
+In a world where AI models and LLMs are the main source of information (who knows in the future?), these biases and censorships will lead to "erasure" of history and the propagation of certain ideologies.
+In the same way that hard working people are "invisible" in the eye of the western user, the oppressed people will continue to be oppressed and forgotten.
 ```
